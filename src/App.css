@@ -1,37 +1,43 @@
-body{
-    background-color: #EFF5F5;
+body {
+  background-color: #eff5f5;
 }
 
-
-.page{
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+.page {
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
-.container{
-    width: 75vw;
-    height: 75vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.container {
+  width: 75vw;
+  height: 75vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.form_cont{
-    margin: 10px 0;
+.form_cont {
+  margin: 10px 0;
 }
 
-.header_cont{
-    margin-bottom: 30px;
-    margin-top: 20px;
+.header_cont {
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
-.cont_style{
-    display: flex;
-    justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     
+.cont_style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.submitBtn {
+  transition: box-shadow 500ms;
+}
+
+.submitBtn :hover {
+  box-shadow: 0px 0px 10px #efefef;
 }

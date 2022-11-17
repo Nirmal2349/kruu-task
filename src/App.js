@@ -1,4 +1,4 @@
-import { db } from "./db/index"
+import { db } from "./db/index";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DynamicInputbox from "./components/dynamicInputbox";
 import Card from "react-bootstrap/Card";
@@ -7,11 +7,6 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 function App() {
-
-
-
-
-
   return (
     <div className="page">
       <div className="container">
@@ -31,7 +26,7 @@ function App() {
           </div>
 
           <div className="cont_style">
-            <Form >
+            <Form>
               {db.map((db, index) => (
                 <DynamicInputbox
                   key={index}
@@ -43,12 +38,17 @@ function App() {
                 />
               ))}
             </Form>
-            <Button
-              variant="primary"
-              style={{ marginTop: "15px" }}
-            >
-              Submit
-            </Button>
+            <div className="submitBtn">
+              <Button
+                style={{
+                  marginTop: "15px",
+                  background: "#EB6440",
+                  border: "0",
+                }}
+              >
+                Submit
+              </Button>
+            </div>
           </div>
         </Card>
       </div>
